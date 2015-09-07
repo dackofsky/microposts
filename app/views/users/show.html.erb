@@ -1,5 +1,10 @@
 <h1>
   <%= gravatar_for @user %>
   
-  <%= @user.name %>
+  名前:<%= @user.name %>
+  <%= link_to '編集' , edit_user_path(@user) %>
+  <br>
+  国籍:<%= @user.country %>
+  <br>
+  email:<%= @user.email %>
 </h1>
